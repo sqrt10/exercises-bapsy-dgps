@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Übungsaufgaben BaPsy-DGPs</title>
+	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+
+<h1>Hello World!</h1>
+
+<p>Dieses Projekt stellt Übungsaufgaben mit Erklärungen und Lösungen zur Verfügung, die für den <a href="https://studieneignungstest-psychologie.de">Studieneignungstest für Psychologie</a> vorbereiten sollen.</p>
+
+<p>Beachten Sie, dass dieses Projekt in keiner Weise mit dem offiziellen Test assoziiert ist und keinerlei Anspruch auf Vollständigkeit oder Aktualität hat. Zum Beispiel orientieren sich die Übungen zu figuralem, schlussfolgernden Denken an üblichen Rätselbüchern, während der offizielle Test abweichende oder zusätzliche Regeln verwenden kann oder in Zukunft interessante Sudoku-Varianten abfragt. Es wird empfohlen, dieses Projekt als zusätzliche Übung zu nutzen und mit den <a href="https://www.studieneignungstest-psychologie.de/vorbereitung/#trainingsmaterialien">offiziellen Trainingsmaterialien</a> abzugleichen.</p>
+
+<h2>Figural</h2>
+
+<p>Übungen zum figuralen, schlussfolgernden Denken. Es gibt <a href="https://de.wikipedia.org/wiki/Peter_Wason#Werk">spannende Prüfungen</a>, es gibt <a href="https://puzzlephil.com/puzzles/de/">interessante Rätsel</a> und dann gibt es noch diesen Test, ob für den Test gelernt wurde. Klicken Sie auf das Vorschaubild, um die Übungen zu starten.</p>
+
+<svg
+	viewBox="0 0 60 20"
+	xmlns="http://www.w3.org/2000/svg">
+
+	<g style="fill:none;stroke:#000;stroke-width:0.2;stroke-linecap:round"> <!-- lines -->
+		<g>
+			<!-- bounding boxes -->
+			<rect width="16" height="16"  x="2" y="2" />
+			<rect width="16" height="16" x="22" y="2" />
+			<rect width="16" height="16" x="42" y="2" />
+		</g>
+		<!-- W -->
+		<path d="
+			M 4,4.5 v 5    M 4,10.5 v 5
+			M 10,4.5 v 5   M 10,10.5 v 5
+			M 16,4.5 v 5   M 16,10.5 v 5
+			M 4.5,16 h 5   M 10.5,16 h 5" />
+		<!-- H -->
+		<path d="
+			M 24,4.5 v 5   M 24,10.5 v 5
+			M 30,4.5 v 5   M 30,10.5 v 5
+			M 24.5,10 h 5" />
+		<!-- Y -->
+		<path d="
+			M 44,4.5 v 5   M 56,4.5 v 5
+			M 50,10.5 v 5
+			M 44.5,10 h 5  M 50.5,10 h 5" />
+	</g>
+	<g style="fill:#888;stroke:none"> <!-- fills -->
+		<circle cx="7" cy="13" r="1" />
+		<circle cx="13" cy="13" r="1" />
+		<circle cx="27" cy="7" r="1" />
+		<circle cx="27" cy="13" r="1" />
+		<circle cx="47" cy="13" r="1" />
+		<circle cx="53" cy="13" r="1" />
+	</g>
+</svg>
+
+<h2>Weitere Übungen</h2>
+
+<p>Andere Testteile, z.B. Mathematikkenntnisse, sind derzeit nicht im Fokus dieses Projektes.</p>
+
+<!-- init -->
+<script type="text/javascript" type="module" src="main.js"></script>
+
+</body>
+</html>

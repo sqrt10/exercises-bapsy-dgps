@@ -1,0 +1,14 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			// Debug the build-script.
+			"name": "EsBuild",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceFolder}/build.js",
+			"args": [ "-dev" ],
+			"runtimeExecutable": "C:/Program Files/nodejs/node.exe",
+		}
+	]
+}
