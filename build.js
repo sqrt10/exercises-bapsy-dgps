@@ -26,8 +26,8 @@ async function main() {
 	await Promise.all( [
 
 		esbuild.build({
-			entryPoints: [ "./src/main.ts" ],
-			outfile: "dist/main.js",
+			entryPoints: [ "./src/*.ts" ],
+			outdir: "dist",
 			bundle: true,
 			minify: !devBuild,
 			sourcemap: !devBuild,
@@ -46,8 +46,9 @@ async function main() {
 		.catch( () => process.exit( 1 ) ),
 
 		new Promise( async ( resolve, _reject ) => {
-			await fs.mkdir('dist/src', { recursive: true } );
-			const copyFiles = [ "index.html", "favicon.png" ];
+			await fs.mkdir('dist', { recursive: true } );
+			// Todo: minify html files
+			const copyFiles = [ "index.html", "figural.html", "favicon.png" ];
 			for( const fileName of copyFiles ) {
 				await fs.copyFile( "src/" + fileName, "dist/" + fileName );
 			}

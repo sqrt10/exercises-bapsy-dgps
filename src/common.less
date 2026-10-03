@@ -4,7 +4,12 @@ body {
 	color: #000;
 	font-family: "Verdana", sans-serif;
 	padding: 0 2%;
-	max-width: 60em;
+}
+
+@content-max-width: 60em;
+
+p {
+	max-width: @content-max-width;
 }
 
 h1 {
@@ -20,5 +25,34 @@ a {
 	color: #06B;
 	&:visited {
 		color: #036;
+	}
+}
+
+a.mainLinkSvg {
+	display: block;
+	padding: 1em;
+	border-radius: 1em;
+	max-width: @content-max-width;
+
+	&:hover {
+		opacity: 60%;
+		background: #FFF;
+	}
+}
+
+a.homeLink {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.2em;
+	>div {
+		width: 3em;
+		height: 3em;
+		display: block;
+		background-image: url("favicon.png");
+	}
+	&:hover {
+		opacity: 60%;
+		background: #FFF;
 	}
 }

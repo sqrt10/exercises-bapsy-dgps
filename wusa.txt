@@ -1,0 +1,4 @@
+Initial commit of project structure.
+
+Add project files.
+Set up build script, linter setting.

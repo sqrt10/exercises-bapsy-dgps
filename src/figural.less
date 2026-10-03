@@ -1,0 +1,50 @@
+
+div.figuralGrid {
+	margin: 0 0 1em 0;
+	padding: 0 1em 0 0;
+	width: 25em;
+	float: left;
+	&.pattern {
+		width: 20em;
+	}
+}
+
+div.figuralTable {
+	user-select: none;
+
+	> div {
+		display: inline-block;
+		width: 5em;
+		height: 5em;
+		padding: .2em;
+		margin: .2em;
+		border: 1px solid black;
+		text-align: center;
+		align-content: center;
+		&.pattern {
+
+		}
+	}
+	&.choices {
+		> div {
+			cursor: pointer;
+			&:hover {
+				opacity: 60%;
+				background: #FFF;
+			}
+		}
+	}
+}
+
+svg.Figure {
+	.fill {
+		fill: #050;
+		stroke: none;
+	}
+	.stroke {
+		fill: none;
+		stroke: #007;
+		stroke-width: 2;
+		stroke-linecap: round;
+	}
+}

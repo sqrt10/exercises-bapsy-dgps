@@ -26,4 +26,4 @@ t.b.d. Should be a website hosted by github pages.
 
 ## License
 
-This project is licensed under the GPL v3, see the `license` file for details.
+This project is licensed under the GPL v3, see the `LICENSE` file for details.
